@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins-BoldItalic;
+    src: url(assets/fonts/Poppins-BoldItalic.ttf);
+}
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(assets/fonts/Poppins-Bold.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+.container{
+    background-color: hsl(0, 0%, 94%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 20px;
+}
+.main{
+    background-color: hsl(0, 0%, 100%);
+    border-radius:10px 10px 180px 10px ;
+    padding: 20px;
+    align-self: center;
+    width: auto;
+    margin: auto;
+    display: grid;
+    /* gap: 1rem; */
+    grid-template-columns: 400px 100px;
+}
+.span-row-2{
+    grid-row:span 2 ;
+}
+.ageform form{
+    display: flex;
+    padding-bottom: 10px;
+    width: 100%;
+}
+label{
+    width: 100%;
+    font-family: Poppins-Regular;
+}
+input{
+    width:100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 86%);
+    font-family: Poppins-Bold;
+}
+.input{
+    margin-left: 15px;
+}
+
+.btn{
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    /* float: right; */
+}
+.agebtn{
+    display: block;
+    height: 100;
+    top: 50px;
+    right: 0px;
+    position: relative;
+}
+.btn:hover{
+    background-color: hsl(0, 0%, 8%);
+}
+.agedis{
+    font-size: 50px;
+    padding: 30px;
+    font-family: Poppins-BoldItalic;
+}
+span{
+    color: hsl(259, 100%, 65%);
+}
+@media only screen and (max-width:500px){
+    .container{
+        display: flex;
+        width: auto;
+        margin: auto;
+        align-self: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px 5px 50px 5px;
+    }
+    .span-row-2{
+        grid-row:span 1 ;
+    }
+    .agebtn{
+        display: flex;
+        margin: auto;
+        width: auto;
+        padding: 20px;
+        top: 10px;
+    }
+    .agedis{
+        font-size: 50px;
+        padding: 20px;
+    }
+    .input{
+        width: 100%;
+    }
+}
